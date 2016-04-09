@@ -40,14 +40,14 @@ public class shoplist extends AppCompatActivity {
 
         String[] shoppinglist = getIntent().getStringArrayExtra("SHOPPING_LIST");
 
-        for (int i = 0; i < chkList.length; i++) {
-            chkList[i].setText(shoppinglist[i]);
+            for (int i = 0; i < chkList.length; i++) {
+                chkList[i].setText(shoppinglist[i]);
         }
     }
 
     public void btnBack(View vw) {
         Intent Grocery = new Intent(this, Grocery.class);
-        setResult(0, Grocery);
-        setContentView(R.layout.activity_grocery);
+            setResult(0, Grocery);
+            setContentView(R.layout.activity_grocery);
     }
 }
